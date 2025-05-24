@@ -11,7 +11,6 @@ func corpFlightBookings(bookings [][]int, n int) []int {
 		preservation[first] += seat
 		if last < n {
 			preservation[last+1] -= seat
-
 		}
 	}
 
