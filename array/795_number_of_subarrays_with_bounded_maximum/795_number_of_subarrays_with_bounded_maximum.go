@@ -2,7 +2,6 @@ package numberofsubarrayswithboundedmaximum
 
 func numSubarrayBoundedMax(nums []int, left int, right int) int {
 	return count(nums, right) - count(nums, left-1)
-
 }
 
 func count(nums []int, bound int) int {

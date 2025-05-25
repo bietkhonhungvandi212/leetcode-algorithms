@@ -48,7 +48,7 @@ func productExceptSelf2(nums []int) []int {
 	current := 1
 	for i := len(nums) - 2; i >= 0; i-- {
 		output[i] = current * nums[i+1]
-		current = output[i]
+		current *= nums[i+1]
 
 	}
 
