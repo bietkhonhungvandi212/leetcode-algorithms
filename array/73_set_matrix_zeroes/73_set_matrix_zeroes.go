@@ -28,7 +28,6 @@ func setZeroes(matrix [][]int) {
 				matrix[i][j] = 0
 			} else if _, row := rowMap[i]; row == true {
 				matrix[i][j] = 0
-
 			}
 		}
 	}
