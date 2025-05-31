@@ -61,7 +61,7 @@ func bfs(graph map[int][]int, node, k int) int {
 
 	for level := 0; level < k && len(queue) > 0; level++ {
 		size := len(queue)
-		for i := 0; i < size; i++ {
+		for range size {
 			currentNode := queue[0] // Take from FRONT (queue behavior)
 			queue = queue[1:]       // Remove from FRONT
 
