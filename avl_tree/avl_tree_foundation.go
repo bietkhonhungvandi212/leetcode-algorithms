@@ -20,7 +20,6 @@ func (this *Node) height() int {
 // update Height
 func (this *Node) updateHeight() {
 	this.Height = max(this.Left.height(), this.Right.height()) + 1
-
 }
 
 func max(num1, num2 int) int {
@@ -75,6 +74,7 @@ func balanceFactor(node *Node) int {
 
 	return node.Left.height() - node.Left.height()
 }
+
 func insert(node *Node, value int) *Node {
 	if node == nil {
 		return &Node{Value: value, Height: 0}
@@ -110,6 +110,71 @@ func insert(node *Node, value int) *Node {
 	//left right rotation
 	if bf > 1 && value > node.Left.Value {
 		return leftRightRotation(node)
+	}
+
+	return node
+}
+
+func leftMostNode(node *Node) *Node {
+	for node.Left != nil {
+		node = node.Left
+	}
+
+	return node
+}
+
+// ======================= DELETION =====================================
+func delete(node *Node, val int) *Node {
+	if node == nil {
+		return nil
+	}
+
+	if val > node.Value {
+		node.Right = delete(node.Right, val)
+	} else if val < node.Value {
+		node.Left = delete(node.Left, val)
+	} else {
+		if node.Left == nil && node.Right == nil {
+			// Case 1: No children
+			return nil
+		} else if node.Left != nil && node.Right == nil {
+			// Case 2: Only left child
+			return node.Left
+		} else if node.Left == nil && node.Right != nil {
+			// Case 3: Only right child
+			return node.Right
+		} else {
+			// Case 4: Both children exist
+			tmp := leftMostNode(node.Right)
+			node.Value = tmp.Value
+			node.Right = delete(node.Right, tmp.Value)
+		}
+	}
+
+	// Update height after deletion
+	node.updateHeight()
+	bf := balanceFactor(node)
+
+	// Left Heavy (bf > 1)
+	if bf > 1 {
+		if node.Left != nil && balanceFactor(node.Left) >= 0 {
+			// Left-Left case
+			node = rightRotation(node)
+		} else if node.Left != nil && balanceFactor(node.Left) < 0 {
+			// Left-Right case
+			node = leftRightRotation(node)
+		}
+	}
+
+	// Right Heavy (bf < -1)
+	if bf < -1 {
+		if node.Right != nil && balanceFactor(node.Right) <= 0 {
+			// Right-Right case
+			node = leftRotation(node)
+		} else if node.Right != nil && balanceFactor(node.Right) > 0 {
+			// Right-Left case
+			node = rightLeftRotation(node)
+		}
 	}
 
 	return node
