@@ -15,15 +15,14 @@ func scoreOfParentheses(s string) int {
 			}
 			stack = append(stack, s[i])
 		} else {
-			top := stack[len(stack)-1]
-			if nestedCount == 1 && top == '(' {
+			if nestedCount == 1 {
 				if isNested == true {
 					isNested = false
 					stack = stack[:len(stack)-1]
 					continue
 				}
 				score += 1
-			} else if nestedCount > 1 && top == '(' {
+			} else if nestedCount > 1 {
 				if isNested != true {
 					score += nestedCount
 				}
