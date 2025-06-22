@@ -6,11 +6,12 @@ import (
 
 func maxProfit(prices []int) int {
 	n := len(prices)
-	if n == 1 {
+	if n <= 1 {
 		return 0
 	}
 
 	changes := make([]int, n)
+	changes[0] = 0 // Initialize first element
 	// create the array to store the sum of adjacent elements
 	for i := 1; i < n; i++ {
 		changes[i] = prices[i] - prices[i-1]
@@ -43,7 +44,7 @@ func findMax(changes []int, left, right int) (int, int, int) {
 
 	if sumLeft >= sumRight && sumLeft >= sumAcross {
 		return leftLow, leftHigh, sumLeft
-	} else if sumRight > sumLeft && sumRight > sumAcross {
+	} else if sumRight >= sumLeft && sumRight >= sumAcross {
 		return rightLow, rightHigh, sumRight
 	}
 
@@ -51,8 +52,9 @@ func findMax(changes []int, left, right int) (int, int, int) {
 }
 
 func findAcrossMax(changes []int, left, mid, right int) (int, int, int) {
+	// Find maximum sum ending at mid (going left)
 	sum := 0
-	leftsum := changes[mid]
+	leftsum := 0
 	leftIndex := mid
 	for i := mid; i >= left; i-- {
 		sum += changes[i]
@@ -62,18 +64,17 @@ func findAcrossMax(changes []int, left, mid, right int) (int, int, int) {
 		}
 	}
 
+	// Find maximum sum starting from mid+1 (going right)
 	sum = 0
-	rightSum := changes[mid+1]
-	rightIndex := mid + 1
+	rightSum := 0
+	rightIndex := mid
 	for i := mid + 1; i <= right; i++ {
 		sum += changes[i]
 		if rightSum < sum {
 			rightSum = sum
 			rightIndex = i
 		}
-
 	}
 
 	return leftIndex, rightIndex, leftsum + rightSum
-
 }
