@@ -64,3 +64,32 @@ func reverseList(head *ListNode) (*ListNode, *ListNode) {
 
 	return tmp1, head
 }
+
+// ========================================================
+func reverseBetween_Optimized1(head *ListNode, left int, right int) *ListNode {
+	if head == nil || left == right {
+		return head
+	}
+
+	// Create dummy node to handle edge cases
+	dummy := &ListNode{Next: head}
+	prev := dummy
+
+	// Move prev to the node before the left position
+	for i := 1; i < left; i++ {
+		prev = prev.Next
+	}
+
+	// Start reversing from left position
+	current := prev.Next
+
+	// Reverse (right - left) times
+	for range right - left {
+		next := current.Next
+		current.Next = next.Next
+		next.Next = prev.Next
+		prev.Next = next
+	}
+
+	return dummy.Next
+}
