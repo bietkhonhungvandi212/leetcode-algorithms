@@ -33,5 +33,4 @@ func recoverTree(root *TreeNode) {
 	if first != nil {
 		first.Val, second.Val = second.Val, first.Val
 	}
-
 }
