@@ -1,7 +1,6 @@
 package minimumabsolutedifferenceinbst
 
 import (
-	"fmt"
 	"math"
 )
 
@@ -34,8 +33,6 @@ func getMinimumDifference(root *TreeNode) int {
 		}
 
 	}
-
-	fmt.Println(result)
 
 	for i := range len(result) - 1 {
 		subtract := result[i+1] - result[i]
