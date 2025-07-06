@@ -20,7 +20,6 @@ func minDiffInBST(root *TreeNode) int {
 		dfs(root.Left)
 		if pred != nil {
 			min = MathMin(min, root.Val-pred.Val)
-
 		}
 		pred = root
 		dfs(root.Right)
