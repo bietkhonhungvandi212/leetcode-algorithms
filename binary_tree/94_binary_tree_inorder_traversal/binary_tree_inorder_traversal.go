@@ -18,7 +18,7 @@ func inorderTraversalV2(root *TreeNode) []int {
 	current := root
 
 	for current != nil || len(stack) > 0 {
-		if root != nil {
+		if current != nil {
 			stack = append(stack, current)
 			current = current.Left
 		} else {
