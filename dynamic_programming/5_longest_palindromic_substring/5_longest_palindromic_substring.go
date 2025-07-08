@@ -24,7 +24,6 @@ func longestPalindrome(s string) string {
 				right = i
 				break
 			}
-			j++
 		}
 	}
 
