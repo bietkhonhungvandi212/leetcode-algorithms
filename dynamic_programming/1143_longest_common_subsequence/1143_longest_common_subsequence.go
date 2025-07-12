@@ -17,7 +17,6 @@ func longestCommonSubsequence(text1 string, text2 string) int {
 	}
 
 	return arr2D[len(text1)][len(text2)]
-
 }
 
 func longestCommonSubsequence_Topdown(text1 string, text2 string) int {
