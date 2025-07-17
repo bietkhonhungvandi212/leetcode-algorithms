@@ -15,7 +15,7 @@ func rob(nums []int) int {
 			return 0
 		}
 
-		if dp[startIndex] != 0 {
+		if dp[startIndex] != -1 {
 			return dp[startIndex]
 		}
 
