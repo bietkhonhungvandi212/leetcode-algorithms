@@ -36,6 +36,27 @@ func maxSumAfterPartitioning_TopDown(arr []int, k int) int {
 	return maxSumPartition(n - 1)
 }
 
+func maxSumAfterPartitioning_BottomUp(arr []int, k int) int {
+	n := len(arr)
+	dp := make([]int, n+1)
+
+	for i := 1; i <= n; i++ {
+		maxSum := math.MinInt
+		currMax := math.MinInt
+		for j := 1; j <= min(i, k); j++ {
+			currMax = max(currMax, arr[i-j])
+			cost := currMax*j + dp[i-j]
+			if cost > maxSum {
+				maxSum = cost
+			}
+		}
+		dp[i] = maxSum
+
+	}
+
+	return dp[n]
+}
+
 func max(a int, b int) int {
 	if a > b {
 		return a
