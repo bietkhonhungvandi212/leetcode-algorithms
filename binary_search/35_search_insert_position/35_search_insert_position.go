@@ -12,7 +12,6 @@ func searchInsert(nums []int, target int) int {
 			right = mid
 		} else {
 			return mid
-
 		}
 
 	}
