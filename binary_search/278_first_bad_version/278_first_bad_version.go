@@ -7,6 +7,10 @@ package firstbadversion
  *			          false if current version is good
  * func isBadVersion(version int) bool;
  */
+func isBadVersion(version int) bool {
+	return true
+}
+
 func firstBadVersion(n int) int {
 	left := 1
 	right := n
