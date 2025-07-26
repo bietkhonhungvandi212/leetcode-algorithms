@@ -19,7 +19,6 @@ func merge(intervals [][]int) [][]int {
 		} else {
 			stack = append(stack, intervals[i])
 		}
-
 	}
 
 	return stack
