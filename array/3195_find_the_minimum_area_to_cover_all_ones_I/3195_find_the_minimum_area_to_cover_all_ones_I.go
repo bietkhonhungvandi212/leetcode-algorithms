@@ -9,9 +9,9 @@ func minimumArea(grid [][]int) int {
 	topMost := -1
 	bottomMost := -1
 
-	for j := 0; j < cols; j++ {
+	for j := range cols {
 		hasOne := false
-		for i := 0; i < rows; i++ {
+		for i := range rows {
 			if grid[i][j] == 1 {
 				hasOne = true
 				break
@@ -25,9 +25,9 @@ func minimumArea(grid [][]int) int {
 		}
 	}
 
-	for i := 0; i < rows; i++ {
+	for i := range rows {
 		hasOne := false
-		for j := 0; j < cols; j++ {
+		for j := range cols {
 			if grid[i][j] == 1 {
 				hasOne = true
 				break
