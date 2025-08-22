@@ -35,6 +35,7 @@ func (this *LRUCache) Get(key int) int {
 
 func (this *LRUCache) Put(key int, value int) {
 	//Update the existed node
+
 	if currNode, ok := this.Cache[key]; ok {
 		this.remove(currNode)
 		this.pushToFront(currNode)
