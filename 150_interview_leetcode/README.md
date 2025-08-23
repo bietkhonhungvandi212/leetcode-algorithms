@@ -1,149 +1,150 @@
-Two Sum
-Best Time to Buy and Sell Stock
-Except Self
-Maximum Subarray
-Maximum Product Subarray
-Find Minimum in Rotated Sorted Array
-Search in Rotated Sorted Array
-3Sum
-Container With Most Water
-Sum of Two Integers
-Number of 1 Bits
-Counting Bits
-Missing Number
-Reverse Bits
-Climbing Stairs
-Coin Change
-Longest Increasing Subsequence
-Longest Common Subsequence
-Word Break
-Combination Sum
-House Robber
-House Robber II
-Decode Ways
-Unique Paths
-Jump Game
-Clone Graph
-Course Schedule
-Pacific Atlantic Water Flow
-Number of Islands
-Longest Repeating Character Replacement
-Longest Substring Without Repeating Characters
-Longest Palindromic Substring
-Palindromic Substrings
-Decode String
-Group Anagrams
-Valid Anagram
-Valid Parentheses
-Valid Palindrome
-Longest Valid Parentheses
-Merge Two Sorted Lists
-Merge k Sorted Lists
-Remove Nth Node From End of List
-Reorder List
-Linked List Cycle
-Linked List Cycle II
-Reverse Linked List
-Rotate List
-Swap Nodes in Pairs
-Add Two Numbers
-LRU Cache
-Min Stack
-Evaluate Reverse Polish Notation
-Basic Calculator
-Implement Stack using Queues
-Implement Queue using Stacks
-Valid Sudoku
-Spiral Matrix
+Two Sum ✅
+Rotate Array ✅
+Best Time to Buy and Sell Stock II ✅
+Contains Duplicate ✅
+Single Number ✅
+Intersection of Two Arrays II ✅
+Plus One ✅
+Move Zeroes ✅
+Valid Sudoku ✅
 Rotate Image
-Set Matrix Zeroes
-Game of Life
-First Missing Positive
-Single Number
-Majority Element
-Find the Duplicate Number
-Sort Colors
-Merge Intervals
-Non-overlapping Intervals
-Insert Interval
-Meeting Rooms
-Meeting Rooms II
-Top K Frequent Elements
-Kth Largest Element in an Array
-Find Median from Data Stream
-Subarray Sum Equals K
-Maximum Length of Pair Chain
-Find K Pairs with Smallest Sums
-Kth Smallest Element in a Sorted Matrix
-Merge Sorted Array
-Remove Duplicates from Sorted Array
-Remove Element
-Move Zeroes
-Two Sum II - Input Array Is Sorted
-Reverse String
-Reverse Words in a String
+Reverse String ✅
+Reverse Integer ✅
+First Unique Character in a String
+Valid Anagram
+Valid Palindrome
 String to Integer (atoi)
-Longest Common Prefix
-Letter Combinations of a Phone Number
-Generate Parentheses
 Implement strStr()
-Divide Two Integers
-Pow(x, n)
-Sqrt(x)
-Add Binary
-Multiply Strings
-Permutations
-Permutations II
-Subsets
-Subsets II
-Combination Sum II
-Next Permutation
-Search Insert Position
-Search a 2D Matrix
-Binary Search
-Find Peak Element
-Search for a Range
-Count and Say
+Longest Common Prefix
+Delete Node in a Linked List
+Remove Nth Node From End of List
+Reverse Linked List
+Merge Two Sorted Lists
+Palindrome Linked List
+Linked List Cycle
 Maximum Depth of Binary Tree
 Validate Binary Search Tree
 Symmetric Tree
 Binary Tree Level Order Traversal
-Binary Tree Zigzag Level Order Traversal
-Construct Binary Tree from Preorder and Inorder Traversal
-Construct Binary Tree from Inorder and Postorder Traversal
 Convert Sorted Array to Binary Search Tree
+Merge Sorted Array
+First Bad Version
+Climbing Stairs
+Best Time to Buy and Sell Stock
+Maximum Subarray
+House Robber
+Fizz Buzz
+Count Primes
+Power of Three
+Roman to Integer
+Number of 1 Bits
+Hamming Distance
+Reverse Bits
+Pascal's Triangle
+Missing Number
+Excel Sheet Column Number
+Majority Element
+Add Binary
+Sqrt(x)
+Valid Parentheses
+Implement Queue using Stacks
+Min Stack
+Design HashMap
+Design HashSet
+Jewels and Stones
+Ransom Note
+First Unique Character in a String
+Find the Difference
+Is Subsequence
+Move Zeroes
+Reverse Vowels of a String
+Intersection of Two Arrays
+Two Sum II - Input array is sorted
+Valid Palindrome II
+Longest Palindrome
+Add Strings
+Third Maximum Number
+Find All Numbers Disappeared in an Array
+Min Cost Climbing Stairs
+Binary Tree Paths
+Same Tree
+Invert Binary Tree
+Subtree of Another Tree
+Diameter of Binary Tree
+Merge Two Binary Trees
+Average of Levels in Binary Tree
+Two Sum IV - Input is a BST
+Minimum Depth of Binary Tree
+Path Sum
+Range Sum Query - Immutable
+Remove Duplicates from Sorted Array
+Remove Element
+Search Insert Position
+Length of Last Word
+Factorial Trailing Zeroes
+Happy Number
+Isomorphic Strings
+Word Pattern
+Nim Game
+Bulls and Cows
+Game of Life
+Integer to Roman
+ZigZag Conversion
+Container With Most Water
+3Sum Closest
+Letter Combinations of a Phone Number
+Remove Nth Node From End of List
+Generate Parentheses
+Swap Nodes in Pairs
+Next Permutation
+Search in Rotated Sorted Array
+Find First and Last Position of Element in Sorted Array
+Combination Sum
+Permutations
+Rotate Image
+Group Anagrams
+Pow(x, n)
+N-Queens
+Maximum Subarray
+Spiral Matrix
+Jump Game
+Merge Intervals
+Insert Interval
+Length of Last Word
+Spiral Matrix II
+Permutation Sequence
+Rotate List
+Unique Paths
+Unique Paths II
+Minimum Path Sum
+Valid Number
+Plus One
+Add Binary
+Text Justification
+Sqrt(x)
+Climbing Stairs
+Remove Duplicates from Sorted List
+Merge Sorted Array
+Binary Tree Inorder Traversal
+Unique Binary Search Trees
+Validate Binary Search Tree
+Recover Binary Search Tree
+Same Tree
+Symmetric Tree
+Binary Tree Level Order Traversal
+Binary Tree Zigzag Level Order Traversal
+Maximum Depth of Binary Tree
+Construct Binary Tree from Preorder and Inorder Traversal
+Convert Sorted Array to Binary Search Tree
+Convert Sorted List to Binary Search Tree
+Balanced Binary Tree
+Minimum Depth of Binary Tree
 Path Sum
 Path Sum II
-Populating Next Right Pointers in Each Node
-Populating Next Right Pointers in Each Node II
-Lowest Common Ancestor of a Binary Search Tree
-Lowest Common Ancestor of a Binary Tree
-Binary Tree Maximum Path Sum
-Invert Binary Tree
 Flatten Binary Tree to Linked List
-Diameter of Binary Tree
-Balanced Binary Tree
-Same Tree
-Subtree of Another Tree
-Binary Tree Inorder Traversal
-Binary Tree Preorder Traversal
-Binary Tree Postorder Traversal
-Word Search
-Word Search II
+Populating Next Right Pointers in Each Node
+Triangle
+Best Time to Buy and Sell Stock
+Best Time to Buy and Sell Stock II
+Word Ladder
 Surrounded Regions
-Trie (Prefix Tree)
-Implement Trie (Prefix Tree)
-Design Add and Search Words Data Structure
-Count Complete Tree Nodes
-Kth Smallest Element in a BST
-Verify Preorder Serialization of a Binary Tree
-Serialize and Deserialize Binary Tree
-Find Bottom Left Tree Value
-Longest Consecutive Sequence
-Longest Palindromic Subsequence
-Partition Equal Subset Sum
-Target Sum
-Min Cost Climbing Stairs
-Unique Binary Search Trees
-Unique Binary Search Trees II
-Trapping Rain Water
