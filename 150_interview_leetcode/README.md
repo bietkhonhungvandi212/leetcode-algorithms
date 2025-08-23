@@ -12,10 +12,10 @@ Reverse String ✅
 Reverse Integer ✅
 First Unique Character in a String
 Valid Anagram ✅
-Valid Palindrome
+Valid Palindrome ✅
 String to Integer (atoi)
 Implement strStr()
-Longest Common Prefix
+Longest Common Prefix ✅
 Delete Node in a Linked List
 Remove Nth Node From End of List
 Reverse Linked List
