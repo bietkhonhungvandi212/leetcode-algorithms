@@ -11,7 +11,7 @@ Rotate Image
 Reverse String ✅
 Reverse Integer ✅
 First Unique Character in a String
-Valid Anagram
+Valid Anagram ✅
 Valid Palindrome
 String to Integer (atoi)
 Implement strStr()
