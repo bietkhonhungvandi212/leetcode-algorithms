@@ -22,8 +22,8 @@ Reverse Linked List
 Merge Two Sorted Lists
 Palindrome Linked List
 Linked List Cycle
-Maximum Depth of Binary Tree
-Validate Binary Search Tree
+Maximum Depth of Binary Tree ✅
+Validate Binary Search Tree ✅
 Symmetric Tree
 Binary Tree Level Order Traversal
 Convert Sorted Array to Binary Search Tree
