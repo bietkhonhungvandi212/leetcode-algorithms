@@ -25,7 +25,7 @@ Linked List Cycle
 Maximum Depth of Binary Tree ✅
 Validate Binary Search Tree ✅
 Symmetric Tree
-Binary Tree Level Order Traversal
+Binary Tree Level Order Traversal ✅
 Convert Sorted Array to Binary Search Tree
 Merge Sorted Array
 First Bad Version
