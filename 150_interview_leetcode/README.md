@@ -41,7 +41,7 @@ Number of 1 Bits
 Hamming Distance
 Reverse Bits
 Pascal's Triangle
-Missing Number
+Missing Number ✅
 Excel Sheet Column Number
 Majority Element
 Add Binary
