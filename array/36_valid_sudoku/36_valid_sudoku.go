@@ -5,8 +5,8 @@ func isValidSudoku(board [][]byte) bool {
 	cols := make([][10]bool, 9)
 	boxes := make([][10]bool, 9)
 
-	for i := 0; i < 9; i++ {
-		for j := 0; j < 9; j++ {
+	for i := range 9 {
+		for j := range 9 {
 			if board[i][j] == '.' {
 				continue
 			}
