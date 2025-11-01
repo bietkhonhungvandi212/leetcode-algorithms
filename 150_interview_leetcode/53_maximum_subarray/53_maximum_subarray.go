@@ -21,7 +21,7 @@ func maxSubArray_bottom_up(nums []int) int {
 	maxSum := dp[0]
 
 	for i := 1; i < n; i++ {
-		dp[i] = max(dp[i-1] + nums[i])
+		dp[i] = max(dp[i-1]+nums[i], nums[i])
 
 		if dp[i] > maxSum {
 			maxSum = dp[i]
