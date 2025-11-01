@@ -18,7 +18,6 @@ func minimumTotalBottomUp(triangle [][]int) int {
 	}
 
 	return triangle[0][0]
-
 }
 
 //This is top down approach but not complete
